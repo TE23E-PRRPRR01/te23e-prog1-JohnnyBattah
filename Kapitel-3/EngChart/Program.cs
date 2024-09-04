@@ -35,7 +35,7 @@ Console.WriteLine($"""
  if (answer == "Y")
  { // Y = Yes
     Console.Write("Should it? (Y/N) ");
-    answer = Console.ReadLine();
+    answer = Console.ReadLine().ToUpper();
     if (answer == "Y")
     {
         Console.WriteLine("No problem!");
