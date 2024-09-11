@@ -13,5 +13,5 @@ int dagar = int.Parse(Console.ReadLine());
 // Räkna ut hur mycket det kommer att kosta för att hyra bilen
 double pris = mil * 5 + dagar * 100 + 500;
 
-
-Console.WriteLine($"Då kommer bilen att kosta dig {pris}");
+// Berätta hur mycket kronor det kommer att kosta
+Console.WriteLine($"Då kommer bilen att kosta dig {pris} kronor");
