@@ -1,4 +1,4 @@
-﻿// Spelet - gissa ett slumptal 1-100
+﻿// Spelet - gissa ett slumptal
 Console.Clear();
 Console.WriteLine("Spelet - gissa ett slumptal");
 
