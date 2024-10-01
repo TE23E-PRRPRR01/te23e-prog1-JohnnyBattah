@@ -59,25 +59,25 @@ b) Jeff Bezos
 c) Mark Zuckerberg
 Skriv ditt svar (a, b eller c): 
 """);
-    svar = Console.ReadLine().ToLower();
-    if (svar == "a")
-    {
-        Console.WriteLine("Rätt svar!");
-        poäng++;
-        break;
+        svar = Console.ReadLine().ToLower();
+        if (svar == "a")
+        {
+            Console.WriteLine("Rätt svar!");
+            poäng++;
+            break;
+        }
+        else if (svar == "b" || svar == "c")
+        {
+            Console.WriteLine("Fel Svar!");
+            break;
+        }
+        else
+        {
+            Console.WriteLine("Jag förstod inte, svara ett svar från alternativen");
+        }
+
     }
-    else if (svar == "b" || svar == "c")
-    {
-        Console.WriteLine("Fel Svar!");
-        break;
-    }
-    else
-    {
-        Console.WriteLine("Jag förstod inte, svara ett svar från alternativen");
-    }
- 
-    }
-    
+
     Console.Clear();
 
     Console.Write("""
@@ -98,7 +98,7 @@ Skriv ditt svar (a, b eller c):
         Console.WriteLine("Fel Svar!");
     }
 
-Console.Clear();
+    Console.Clear();
 
     Console.Write("""
 Fråga 4: Vilket år startade NTI Stockholm Gymnasiet?
