@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.002.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Listor", "Listor.csproj", "{DFB6D67E-C891-4AED-82F5-89E63F5A2DE1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DFB6D67E-C891-4AED-82F5-89E63F5A2DE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFB6D67E-C891-4AED-82F5-89E63F5A2DE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFB6D67E-C891-4AED-82F5-89E63F5A2DE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFB6D67E-C891-4AED-82F5-89E63F5A2DE1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BF5F3F99-97D7-470D-ADC6-FB91EC6B3B3E}
+	EndGlobalSection
+EndGlobal
