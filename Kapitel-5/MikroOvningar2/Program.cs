@@ -62,7 +62,31 @@ List<string> listaKontroll = ["Anna", "Björn", "Cecilia"];
 Console.WriteLine($"Namn i listan: {string.Join(", ", listaKontroll)}");
 Console.Write("Ange ett namn: ");
 string nyNamn = Console.ReadLine();
-if (condition)
+if (listaKontroll.Contains(nyNamn))
 {
-    
+    Console.WriteLine($"{nyNamn} finns redan i listan.");
+}
+else
+{
+    listaKontroll.Add(nyNamn);
+    Console.WriteLine(string.Join(", ", listaKontroll));
+}
+
+// Kontrollera om ett årtal redan finns
+List<int> listaNyÅrtal = [1492, 1776, 1914];
+Console.WriteLine($"Årtal i listan: {string.Join(", ", listaNyÅrtal)}");
+
+Console.Write("Ange ett årtal");
+string nyÅrtalText = Console.ReadLine();
+int points = 0;
+success = int.TryParse(nyÅrtalText, out points);
+
+if (listaNyÅrtal.Contains(points))
+{
+    Console.WriteLine($"{points} finns redan i listan.");
+}
+else
+{
+    listaNyÅrtal.Add(points);
+    Console.WriteLine(string.Join(", ", listaNyÅrtal));
 }
