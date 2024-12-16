@@ -93,7 +93,20 @@ Välj ett alternativ:
     }
     else if (val == "6")
     {
-        
+        for (int i = 0; i < listaBetyg.Count; i++)
+        {
+            Console.WriteLine($"{listaFilmer[i]}: {listaBetyg[i]}");
+            Console.Write("Vill du ändra filmens betyg? (j/n): ");
+            string ändra = Console.ReadLine();
+            if (ändra == "j")
+            {
+                Console.Write("Vilket betyg vill du ändra filmen till (1-5): ");
+                string betygText = Console.ReadLine();
+                int betyg = 0;
+                bool success = int.TryParse(betygText, out betyg);
+                listaBetyg[i] = betyg;
+            }
+        }
     }
     else
     {
