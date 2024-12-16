@@ -4,6 +4,9 @@ Console.WriteLine("Filmregister");
 // Lista för att lagra filmerna
 List<string> listaFilmer = [];
 
+List<int> listaBetyg = [];
+
+
 // Be användaren ange ett antal
 Console.Write("Ange antal filmer per sida (3-5): ");
 string antalText = Console.ReadLine();
@@ -31,6 +34,8 @@ while (true)
 2. Lista alla filmer
 3. Sök en film
 4. Avsluta
+5. Lista filmers betyg
+6. Ändra betyg
 Välj ett alternativ: 
 """);
     string val = Console.ReadLine();
@@ -44,6 +49,9 @@ Välj ett alternativ:
         {
             Console.Write("Ange en film att lägga till: ");
             listaFilmer.Add(Console.ReadLine());
+            Console.Write($"Sätt betyg (1-5) för {listaFilmer[i]}: ");
+            int betyg = int.Parse(Console.ReadLine());
+            listaBetyg.Add(betyg);
         }
     }
     else if (val == "2")
@@ -75,6 +83,17 @@ Välj ett alternativ:
         Console.WriteLine();
         Console.WriteLine("Tack för idag!");
         break;
+    }
+    else if (val == "5")
+    {
+        for (int i = 0; i < listaBetyg.Count; i++)
+        {
+            Console.WriteLine($"{listaFilmer[i]}: {listaBetyg[i]}");
+        }
+    }
+    else if (val == "6")
+    {
+        
     }
     else
     {
