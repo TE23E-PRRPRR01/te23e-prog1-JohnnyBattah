@@ -40,7 +40,7 @@ static int Addera(int tal1, int tal2) // Hela raden kallas för signatur
 }
 
 /// <summary>
-/// Vänder på texten
+/// Vänder på texte
 /// </summary>
 /// <param name="text"></param>
 /// <returns></returns>
